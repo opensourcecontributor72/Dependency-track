@@ -1,0 +1,10 @@
+.env
+*.env
+myvenv/
+
+Dependency-Track_Plugin/myvenv
+*.log
+*.txt
+jwt_token.json
+team_api_key.json
+Dependency-Track_Plugin/

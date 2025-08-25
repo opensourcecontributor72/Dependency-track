@@ -1,0 +1,50 @@
+{
+    "metadata": {
+        "generated_at": "2025-08-22T22:51:18",
+        "script_name": "users_list.py",
+        "description": "OWASP Dependency-Track Users List Response",
+        "version": "1.0",
+        "timezone": "CEST"
+    },
+    "team": {
+        "name": "Team_S",
+        "users": [
+            {
+                "username": "Sanjay",
+                "email": "sanjay@mail.com",
+                "fullname": "Sanjay",
+                "last_login": null,
+                "created": null,
+                "suspended": false,
+                "force_password_change": false,
+                "non_expiry_password": false,
+                "teams": [
+                    "Team_S"
+                ],
+                "permissions": [
+                    {
+                        "name": "PORTFOLIO_MANAGEMENT",
+                        "description": "Allows the creation, modification, and deletion of data in the portfolio"
+                    }
+                ]
+            },
+            {
+                "username": "dekuma",
+                "email": "deepak.kumar1@assaabloy.com",
+                "fullname": "Deepak Kumar",
+                "last_login": null,
+                "created": null,
+                "suspended": false,
+                "force_password_change": false,
+                "non_expiry_password": false,
+                "teams": [
+                    "TeamAPITest",
+                    "TeamB",
+                    "Team_S",
+                    "Test Team"
+                ],
+                "permissions": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "4.13.3",
+    "timestamp": "2025-08-04T12:52:10Z",
+    "systemUuid": "d81550b9-61e5-4b0b-8cdf-50e8314404f8",
+    "uuid": "1605b174-890c-42cd-9c0b-99fa71b28cd6",
+    "application": "Dependency-Track",
+    "framework": {
+        "name": "Alpine",
+        "version": "3.2.0",
+        "timestamp": "2025-04-02T10:25:57Z",
+        "uuid": "356dc2e0-41a7-46b1-8695-641b301779da"
+    },
+    "database": {
+        "productVersion": "17.5",
+        "productName": "PostgreSQL"
+    }
+}

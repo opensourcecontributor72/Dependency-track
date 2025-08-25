@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-08-24T12:14:40.492320",
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "status_code": null,
+  "url": "https://dependency-track.tools.aa.st/api/v1/user/login"
+}
