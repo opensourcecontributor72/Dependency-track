@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependency-Track Login</title>
+  <link rel="stylesheet" href="/components/auth.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='10' y='10' width='25' height='25' rx='3' fill='%23e91e63'/%3E%3Crect x='45' y='10' width='25' height='25' rx='3' fill='%23e91e63'/%3E%3Crect x='10' y='45' width='25' height='25' rx='3' fill='%23e91e63'/%3E%3Crect x='45' y='45' width='25' height='25' rx='3' fill='none' stroke='%23666' stroke-width='2'/%3E%3C/svg%3E">
+  <script src="/components/auth.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo-squares">
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+      </div>
+      <div class="logo-text">
+        dependency<span class="logo-track">track</span>
+      </div>
+    </div>
+
+    <h1 class="title">Login</h1>
+
+    <form id="loginForm" class="section">
+      <label for="username" class="label">Username or Email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="icon-user"></span>
+          </span>
+        </div>
+        <input type="text" id="username" name="username" class="input" placeholder="Enter Username or Email" autocomplete="username">
+      </div>
+      <label for="password" class="label">Password</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="icon-key"></span>
+          </span>
+        </div>
+        <input type="password" id="password" name="password" class="input" placeholder="Enter Password" autocomplete="current-password">
+      </div>
+      <button type="submit" id="loginBtn" class="button button-blue">Login</button>
+    </form>
+
+    <div id="errorMessage" class="error-message hidden"></div>
+  </div>
+</body>
+</html>

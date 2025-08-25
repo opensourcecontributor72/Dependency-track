@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Dependency-Track Team Token Generator{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo-squares">
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+        <div class="logo-square"></div>
+      </div>
+      <div class="logo-text">
+        dependency<span class="logo-track">track</span>
+      </div>
+    </div>
+
+    <h1 class="title">Team Token Generator</h1>
+
+    <div id="usernameSection" class="section">
+      <label for="username" class="label">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="icon-user"></span>
+          </span>
+        </div>
+        <input type="text" id="username" class="input" placeholder="Please Enter Email or Username" autocomplete="username" readonly>
+      </div>
+      <button id="fetchTeamsBtn" class="button button-blue">Get Teams</button>
+    </div>
+
+    <!-- Hidden input to pass username from server to JavaScript -->
+    <input type="hidden" id="hiddenUsername" value="{{ username }}">
+
+    <div id="teamSection" class="section hidden">
+      <label for="teamSelect" class="label">Select Team</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="icon-users"></span>
+          </span>
+        </div>
+        <select id="teamSelect" class="input">
+          <option value="">Select a team</option>
+        </select>
+      </div>
+      <button id="generateTokenBtn" class="button button-blue" disabled>Get Token</button>
+    </div>
+
+    <div id="tokenResult" class="section hidden">
+      <label class="label">Generated API Token</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <span class="icon-key"></span>
+          </span>
+        </div>
+        <div id="apiToken" class="token-display"></div>
+      </div>
+      <button id="copyTokenBtn" class="button button-yellow">Copy Token</button>
+    </div>
+
+    <div id="errorMessage" class="error-message hidden"></div>
+  </div>
+
+  <!-- Toaster Overlay -->
+  <div id="toasterOverlay" class="toaster-overlay">
+    <div class="toaster">
+      <div class="toaster-icon">⚠️</div>
+      <div class="toaster-title">Confirm Action</div>
+      <div id="toasterMessage" class="toaster-message"></div>
+      <div class="toaster-buttons">
+        <button id="toasterYes" class="toaster-button toaster-button-yes">Yes, Proceed</button>
+        <button id="toasterNo" class="toaster-button toaster-button-no">Cancel</button>
+      </div>
+    </div>
+  </div>
+{% endblock %}

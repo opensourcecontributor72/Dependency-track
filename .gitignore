@@ -7,4 +7,4 @@ Dependency-Track_Plugin/myvenv
 *.txt
 jwt_token.json
 team_api_key.json
-Dependency-Track_Plugin/
+#Dependency-Track_Plugin/

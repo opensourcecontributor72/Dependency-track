@@ -1,0 +1,13 @@
+{
+    "metadata": {
+        "generated_at": "2025-08-25T11:42:42",
+        "script_name": "dt_generate_api_key.py",
+        "description": "OWASP Dependency-Track API Key Generation Response",
+        "version": "1.0",
+        "timezone": "CEST"
+    },
+    "team": {
+        "name": "TeamPOC",
+        "api_key": "odt_HHq3JwNK_MaNFdlkz14FO5fC4ZjlFzThVE6tpUGVN"
+    }
+}
