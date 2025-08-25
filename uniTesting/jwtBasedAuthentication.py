@@ -33,7 +33,7 @@ def get_jwt_token_simple():
     """Simple JWT token authentication for DTrack"""
     
     # Configuration
-    BASE_URL = "https://dependency-track.tools.aa.st"
+    BASE_URL = "dt-server-url"
     USERNAME = os.getenv("DT_USERNAME")
     PASSWORD = os.getenv("DT_PASSWORD")
     
